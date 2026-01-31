@@ -6,4 +6,4 @@ Syslack Linux Also Known As Syslax Its A Base With No Desktop Environment Its Ba
 Syslack Linux Doesnt Need Iso Its A DIY Distro
 Syslack Doesnt Have A Graphical Install You Just Install Ubuntu Server First Then Configure It By Yourself
 
-If You See theres 2 S Means Sysslack Some People thinks Its A Mistake But Its Not Mistake Because Sysslack means Sys Means System OS Then slack means slackware in ubuntu edition
+If You See theres 2 S Means Sysslack Some People thinks Its A Mistake But Its Not Mistake Because Sysslack means Sys Means System Base Then slack means slackware in ubuntu edition
