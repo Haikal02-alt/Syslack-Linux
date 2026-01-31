@@ -16,15 +16,32 @@ Installing Syslack Linux Is Extremely Hard TO Install Unless if You use Ubuntu S
   fdisk -l
   Partition manually:
 
-  /dev/sda1 → EFI (if UEFI, 512MB, type EF00)
+      UEFI setup:
 
-  /dev/sda2 → root (ext4, rest of disk)
+        /dev/sda1 → EFI System Partition (512MB, type EF00, FAT32)
 
-  /dev/sda3 → swap (2–4GB depending on RAM)
+        /dev/sda2 → root (ext4, rest of disk)
+
+        /dev/sda3 → swap (2–4GB depending on RAM)
+
+    Legacy BIOS setup (no Syslinux):
+
+        /dev/sda1 → root (ext4, whole disk minus swap)
+
+        /dev/sda2 → swap
+
+
 7 Format:
+  mkfs.vfat /dev/sda1   # only for UEFI
+  mkfs.ext4 /dev/sda2
+  mkswap /dev/sda3
+  swapon /dev/sda3
+
+  Mount root
   mount /dev/sda2 /mnt
   mkdir /mnt/boot
   mount /dev/sda1 /mnt/boot   # only if UEFI
+
 8 Base System Install
   Bootstrap Ubuntu into /mnt:
   debootstrap --arch=amd64 noble /mnt http://archive.ubuntu.com/ubuntu/
@@ -37,13 +54,15 @@ Installing Syslack Linux Is Extremely Hard TO Install Unless if You use Ubuntu S
   Enter chroot:
   chroot /mnt /bin/bash
 9 Installing Bootloader
-  For Legacy BIOS (Syslinux)
-  apt install syslinux
-  syslinux --install /dev/sda
-  UEFI (GRUB):
-  apt install grub-efi-amd64
+  Install GRUB
+  apt install grub-pc grub-efi-amd64
+  Legacy BIOS
+  grub-install /dev/sda
+  update-grub
+  UEFI
   grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Syslack
   update-grub
+
 10 Unified Kernel Images
    apt install linux-image-generic-lts
    Enable unified kernel images (UKI) if desired
@@ -70,4 +89,37 @@ Installing Syslack Linux Is Extremely Hard TO Install Unless if You use Ubuntu S
   exit
   umount -R /mnt
 13 Reboot into Syslack Linux.
-14 This Is Unfinished
+14 run sudo apt update
+15 run sudo nano /etc/default/grub
+   (If You Need it) Change
+    GRUB_TIMEOUT=0 To GRUB_TIMEOUT=5 Then GRUB_TIMEOUT_STYLE=hidden to GRUB_TIMEOUT_STYLE=menu
+    then Change GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu` to GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Syslack Linux`
+    Ctrl X Y Enter Then sudo update-grub
+16 Run sudo nano /etc/os-release
+   Then change PREETY_NAME="Ubuntu 24.04.3 LTS" To PREETY_NAME="Syhttps://github.com/Haikal02-alt/Syslack-Linuxslack Linux"
+   Change NAME="Ubuntu" To NAME="Syslack Linux"
+   Change VERSION="24.04.3 LTS (Noble Numbat)" To VERSION=""
+   Change VERSION_CODENAME=noble To VERSION_CODENAME=
+   Why Version And Version Codename Must be Blank It Because Its Rolling Release Distro
+   Change ID=ubuntu to ID=syslack
+   Change HOME_URL="https://ubuntu.com/" To HOME_URL="https://github.com/Haikal02-alt/Syslack-Linux"
+   Then Reboot
+17 Change Some Ubuntu To Syslack On /etc/issue on sudo nano /etc/issue If You See Ubuntu 24.04.3 LTS \n \1 Change it To Syslack Linux \n \1
+   Also run sudo nano /etc/issue.net Then Change Ubuntu 24.04.3 LTS To Syslack Linux
+   Then Reboot Again sudo reboot
+18 Adjust GRUB Scripts
+   Run sudo nano /etc/grub.d/10_linux
+   If You See if [ "x${GRUB_DISTRIBUTOR}" = "x" ] ; then
+   OS=GNU/Linux
+   And OS="${GRUB_DISTRIBUTOR} GNU/Linux" 
+   Change it To
+   if [ "x${GRUB_DISTRIBUTOR}" = "x" ] ; then
+   OS=
+   And
+   OS="${GRUB_DISTRIBUTOR}"
+   Then Find GRUB_DISABLE_SUBMENU
+   Then Disable GRUB_DISABLE_SUBMENU By Changing GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false"
+   Then sudo update-grub
+   Then Reboot Again using sudo reboot
+
+19 Have Fun And Start Using Syslack Linux Which You Can Say I Use Syslack BTW
