@@ -5,5 +5,6 @@ Welcome To Syslack Its A Lightweight And Universal Linux Distro
 Syslack Linux Also Known As Syslax Its A Base With No Desktop Environment Its Based On Ubuntu LTS
 Syslack Linux Doesnt Need Iso Its A DIY Distro
 Syslack Doesnt Have A Graphical Install You Just Install Ubuntu Server First Then Configure It By Yourself
+Syslack is a lightweight base linux distro with no desktop environment by default but you can install it
 
 If You See theres 2 S Means Sysslack Some People thinks Its A Mistake But Its Not Mistake Because Sysslack means Sys Means System Base Then slack means slackware in ubuntu edition
