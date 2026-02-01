@@ -60,4 +60,13 @@ Then sudo nano /etc/os-release
 Then Change LOGO=ubuntu-logo To LOGO=/usr/share/pixmaps/syslack-logo.png (For KDE Plasma)
 Then ctrl x y enter
 
+If LightDM Cant Detect Your Desktop Environment I Would Recommend LXDM sudo apt install lxdm Then Reboot
+For LXDE I Would Recommend LXDM sudo apt install lxdm Then Reboot
+Removing LightDm (For LXDE Or If LightDM cant Detect Desktop Environment)
+sudo systemctl stop lightdm
+sudo apt purge lightdm
+sudo apt purge lightdm-gtk-greeter lightdm-webkit-greeter
+sudo apt autoremove
+sudo apt clean
+
 Then Have Fun And Start Using A Graphical Desktop Environment
