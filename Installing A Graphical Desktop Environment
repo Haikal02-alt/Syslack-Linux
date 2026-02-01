@@ -50,14 +50,14 @@ cd Ubuntu-Hyprland
     If you’re using startx, you can create a .xinitrc with:
     exec Hyprland
 
-After You Install The Graphical Desktop Environment Or Customizable Window Managers
+After You Install The Graphical Desktop Environment Or Customizable Window Managers If Theres No Browser Install it Using sudo apt firefox or konqueror By Using sudo apt install firefox or sudo apt install konqueror
 You May Download The Syslack Logo On https://github.com/Haikal02-alt/Syslack-Linux Then Save Image As Then Save It to Downloads If You See 543212867-3fb3c0d3-784e-46f0-b862-6fd822089d3e.png Change To syslack-logo.png
 Then sudo mv /home/yourname/Downloads/syslack-logo.png /usr/share/pixmaps
 Then sudo cp /usr/share/pixmaps/syslack-logo.png /usr/share/pixmaps/ubuntu-logo.svg
      sudo cp /usr/share/pixmaps/syslack-logo.png /usr/share/pixmaps/ubuntu-logo-text.png
      sudo cp /usr/share/pixmaps/syslack-logo.png /usr/share/pixmaps/ubuntu-logo-text-dark.png
 Then sudo nano /etc/os-release
-Then Change LOGO=ubuntu-logo To LOGO=/usr/share/pixmaps/syslack-logo.png
+Then Change LOGO=ubuntu-logo To LOGO=/usr/share/pixmaps/syslack-logo.png (For KDE Plasma)
 Then ctrl x y enter
 
 Then Have Fun And Start Using A Graphical Desktop Environment
