@@ -1,0 +1,13 @@
+1 If You Havent Install A Boot Splash Run sudo apt install plymouth plymouth-themes
+2 run sudo nano /etc/default/grub then add quiet splash On GRUB_CMDLINE_LINUX_DEFAULT then run sudo update-grub
+3 It Sets To ubuntu-text by default You Need to Run sudo nano /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth Then Change title=Ubuntu 24.04 To title=Syslack Linux Then sudo update-initramfs -u
+4 Reboot To Test
+5 On /usr/share/plymouth/ theres ubuntu-logo.png run sudo cp /usr/share/pixmaps/syslack-logo.png /usr/share/plymouth/ubuntu-logo.png on terminal
+6 Using Debian Plymouth Themes
+  Using Spacefun Plymouth Theme
+  run sudo sudo cp /usr/share/pixmaps/syslack-logo.png /usr/share/plymouth/themes/spacefun/logo.png
+  Install The Theme sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/spacefun/spacefun.plymouth 100
+  Then Run sudo update-alternatives --config default.plymouth
+  Enter the number corresponding to the theme you want to use
+  Update Initramfs Using sudo update-initramfs -u
+  Reboot To Test
