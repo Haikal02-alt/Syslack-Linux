@@ -1,4 +1,4 @@
-You Can Install A Graphical Desktop Environment For Example GNOME KDE Plasma Cinnamon XFCE Mate LXQT LXDE Cosmic And More Using sudo apt install
+You Can Install A Graphical Desktop Environment For Example GNOME KDE Plasma Cinnamon XFCE Mate LXQT LXDE And More Using sudo apt install
 You Can Also Install A Window Manager That Is Customizable Like i3wm swaywm icewm bspwm dwm etc using sudo apt install
 
 For Hyprland You can Use Kool Hyprland
