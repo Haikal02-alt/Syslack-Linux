@@ -96,14 +96,13 @@ Installing Syslack Linux Is Extremely Hard To Install Unless if You use Ubuntu S
     then Change GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu` to GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Syslack Linux`
     Ctrl X Y Enter Then sudo update-grub
 16 Run sudo nano /etc/os-release
-   Then change PREETY_NAME="Ubuntu 24.04.3 LTS" To PREETY_NAME="Syhttps://github.com/Haikal02-alt/Syslack-Linuxslack Linux"
+   Then change PREETY_NAME="Ubuntu 24.04.3 LTS" To PREETY_NAME="Syslack Linux"
    Change NAME="Ubuntu" To NAME="Syslack Linux"
    Change VERSION="24.04.3 LTS (Noble Numbat)" To VERSION=""
    Change VERSION_CODENAME=noble To VERSION_CODENAME=
    Why Version And Version Codename Must be Blank It Because Its Rolling Release Distro
    Change ID=ubuntu to ID=syslack
    Change HOME_URL="https://ubuntu.com/" To HOME_URL="https://github.com/Haikal02-alt/Syslack-Linux"
-   Then Reboot
 17 Change Some Ubuntu To Syslack On /etc/issue on sudo nano /etc/issue If You See Ubuntu 24.04.3 LTS \n \1 Change it To Syslack Linux \n \1
    Also run sudo nano /etc/issue.net Then Change Ubuntu 24.04.3 LTS To Syslack Linux
    Then Reboot Again sudo reboot
