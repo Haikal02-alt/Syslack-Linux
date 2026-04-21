@@ -48,3 +48,4 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
      Then sudo nano /etc/os-release
      Then Change LOGO=ubuntu-logo To LOGO=/usr/share/pixmaps/syslack-logo.png
      Then ctrl x y enter
+11 Resets to Debian/Ubuntu branding when base-files updates. to prevent that, you can mark base-files as held sudo apt-mark hold base-files
