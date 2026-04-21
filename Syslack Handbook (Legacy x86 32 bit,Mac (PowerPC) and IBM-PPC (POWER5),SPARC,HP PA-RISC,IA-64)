@@ -1,7 +1,20 @@
-To install Syslack Linux For Legacy x86 32 bit (aka 80x86, 8086 family) SPARC HP PA-RISC IA-64 Mac (PowerPC) and IBM-PPC (POWER5) 
-1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Server install CD Then Download Which architecture
-2 Flash The ISO From USB Stick
-3 Then When on installer menu enter Install to the hard disk
-4 After Install
+To install Syslack Linux For Legacy x86 32 bit (aka 80x86, 8086 family) SPARC HP PA-RISC IA-64 Mac (PowerPC) and IBM-PPC (POWER5)
 
-This Handbook Is unfinished
+1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Desktop CD Then Download Which architecture (NOT 64-bit PC AMD64)
+2 Flash The ISO From USB Stick
+3 Then When on installer menu enter Start or install ubuntu
+4 Login To Desktop
+5 Run sudo nano /etc/lsb-release
+  Then change DISTRIB_ID=Ubuntu To DISTRIB_ID=Syslack Linux
+  Then change DISTRIB_RELEASE=6.06 To DISTRIB_RELEASE=1.0
+  Remove DISTRUB_CODENAME=dapper
+  Then Change DISTIB_DESCRIPTION="Ubuntu 6.06.1 LTS" To DISTRIB_DESCRIPTION="Syslack Linux"
+6 Go To Theme Preferences Then Select Clearlooks Instead Of Human
+7 Open sessions then Disable Show splash screen on login then Enable Automatically save changes to session
+8 Run sudo nano /boot/grub/menu.lst then change timeout 3 to 5 then add # on hiddenmenu example # hiddenmenu
+  on End Default Options Change title Ubuntu To Syslack Linux On Every Beginning Even recovery mode and memtest86+ then remove quiet splash
+  never update grub because you don’t actually need to run sudo update-grub since Syslack Linux For Legacy x86 32 bit,Mac (PowerPC) and IBM-PPC (POWER5),SPARC,HP PA-RISC,IA-64 uses grub legacy Which GRUB legacy reads menu.lst directly at boot, so changes take effect immediately.
+9 Run sudo nano /etc/issue then change Ubuntu 6.06.1 LTS \n \l To Syslack Linux \n \l
+  Then change sudo nano /etc/issue.net then change Ubuntu 6.06.1 LTS To Syslack Linux
+10 Run sudo nano /etc/gdm/gdm.conf then add # On GraphicalTheme=Human And remove # On GraphicalThemes=circles/:happygnome Example #GraphicalTheme=Human And GraphicalThemes=circles/:happygnome
+   Ctrl x y enter
