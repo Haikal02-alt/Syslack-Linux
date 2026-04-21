@@ -12,7 +12,7 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
 6 run sudo nano /etc/default/grub
    (If You Need it) Change
     GRUB_TIMEOUT=0 To GRUB_TIMEOUT=5 Then GRUB_TIMEOUT_STYLE=hidden to GRUB_TIMEOUT_STYLE=menu
-    then Change GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu` to GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Syslack Linux`
+    then Change GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu` to GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Syslack Linux} ) 2>/dev/null || echo Syslack Linux`
     Ctrl X Y Enter Then sudo update-grub
 7 Run sudo nano /etc/os-release
    Then change PREETY_NAME="LTSVERSION LTS" To PREETY_NAME="Syslack Linux"
