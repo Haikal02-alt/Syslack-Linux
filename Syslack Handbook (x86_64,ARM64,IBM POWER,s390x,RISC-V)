@@ -17,7 +17,7 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
 7 Run sudo nano /etc/os-release
    Then change PREETY_NAME="LTSVERSION LTS" To PREETY_NAME="Syslack Linux"
    Change NAME="Ubuntu" To NAME="Syslack Linux"
-   Change VERSION="LTSVERSION LTS (LTSCODENAME)" To VERSION=""
+   Change VERSION="LTSVERSION LTS (LTSCODENAME)" To VERSION="1.0" VERSION_ID="LTSVERSION" To VERSION_ID="1.0"
    Change VERSION_CODENAME=noble To VERSION_CODENAME=
    Change ID=ubuntu to ID=syslack
    Change HOME_URL="https://ubuntu.com/" To HOME_URL="https://github.com/Haikal02-alt/Syslack-Linux"
