@@ -8,6 +8,7 @@ Syslack Doesnt Have A Graphical Install You Just Install Ubuntu Server First The
 Syslack is a lightweight base linux distro with no desktop environment by default but you can install it
 
 Syslack Linux supports a lot of hardware. Pick your processor architecture
+
 x86_64 (aka amd64, x64, Intel 64)
 ARM64 (aka AArch64, ARMv8-A)
 IBM POWER
