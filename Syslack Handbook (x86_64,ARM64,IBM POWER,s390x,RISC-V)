@@ -24,6 +24,7 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
    Change SUPPORT_URL="https://help.ubuntu.com/" To SUPPORT_URL="https://github.com/Haikal02-alt/Syslack-Linux/discussions/2"
    Change BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/" To BUG_REPORT_URL="https://github.com/Haikal02-alt/Eternal-Linux/issues/1"
    Remove PRIVACY_POLICY_URL
+   Remove UBUNTU_CODENAME=noble 
 8 Change Some Ubuntu To Syslack On /etc/issue on sudo nano /etc/issue If You See Ubuntu LTSVERSION LTS \n \1 Change it To Syslack Linux \n \1
    Also run sudo nano /etc/issue.net Then Change Ubuntu LTSVERSION LTS To Syslack Linux
    Then Reboot Again sudo reboot
