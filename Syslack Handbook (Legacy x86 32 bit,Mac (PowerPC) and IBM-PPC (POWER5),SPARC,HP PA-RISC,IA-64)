@@ -22,6 +22,24 @@
    For Click on command button select click
    For Error message Select Siren
    For informational message select Boing
+13 Edit apt sources using sudo nano /etc/apt/sources.list
+   Then remove Line commented out by installer and Replace existing lines with old-releases URLs
+   Use this template
+
+deb http://old-releases.ubuntu.com/ubuntu dapper main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu dapper-updates main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper-updates main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu dapper-security main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper-security main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu dapper-backports main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper-backports main restricted universe multiverse
+
+Update package lists
+sudo apt-get update
 
 For SPARC HP PA-RISC And IA-64
 
@@ -41,3 +59,21 @@ For SPARC HP PA-RISC And IA-64
 8 Run sudo nano /etc/issue then change Ubuntu 6.06.1 LTS \n \l To Syslack Linux \n \l
   Then change sudo nano /etc/issue.net then change Ubuntu 6.06.1 LTS To Syslack Linux
 9 Run sudo rm /etc/motd then sudo reboot
+10 Edit apt sources using sudo nano /etc/apt/sources.list
+   Then remove Line commented out by installer and Replace existing lines with old-releases URLs
+   Use this template
+
+deb http://old-releases.ubuntu.com/ubuntu dapper main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu dapper-updates main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper-updates main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu dapper-security main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper-security main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu dapper-backports main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu dapper-backports main restricted universe multiverse
+
+Update package lists
+sudo apt-get update
