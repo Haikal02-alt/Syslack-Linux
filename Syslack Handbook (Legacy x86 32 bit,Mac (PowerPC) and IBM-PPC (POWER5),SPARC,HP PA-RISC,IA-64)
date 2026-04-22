@@ -59,6 +59,8 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi
 
+Or You can reinstall gdm by running sudo apt-get install gdm
+
 For SPARC HP PA-RISC And IA-64
 
 1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Server install CD Then Download Which architecture (NOT 64-bit PC AMD64)
