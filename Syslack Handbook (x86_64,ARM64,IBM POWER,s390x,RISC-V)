@@ -66,6 +66,9 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
   rm -rf ~/snap
   sudo rm -rf /var/snap /var/lib/snapd /var/cache/snapd
 
+  Autoremove
+  sudo apt autoremove
+
   Reboot
   sudo reboot
 
