@@ -54,3 +54,22 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
      Then ctrl x y enter
 11 The /etc/os-release Resets when base-files updates. to prevent that, you can mark base-files as held sudo apt-mark hold base-files
 12 Remove /etc/update-motd.d with sudo rm -rf /etc/update-motd.d then sudo reboot
+13 Run sudo apt-mark hold desktop-base
+14 You May Stop The Services Of Snap
+   sudo systemctl stop snapd
+   sudo systemctl disable snapd
+
+  Purge Snapd (Recommended For Older Hardware Or Any Slow Hardware)
+  sudo apt purge snapd
+
+  Clean Up Leftover Directories
+  rm -rf ~/snap
+  sudo rm -rf /var/snap /var/lib/snapd /var/cache/snapd
+
+  Reboot
+  sudo reboot
+
+  System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
+  sudo apt-mark hold snapd
+
+15 Run sudo apt-mark hold ubuntu-wallpapers
