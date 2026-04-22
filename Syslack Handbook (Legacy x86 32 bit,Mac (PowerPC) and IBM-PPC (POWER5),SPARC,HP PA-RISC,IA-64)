@@ -1,7 +1,7 @@
 1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Desktop CD Then Download Which architecture (NOT 64-bit PC AMD64)
 2 Flash The ISO From USB Stick
 3 Then When on installer menu enter Start or install ubuntu
-4 Login To Desktop
+4 After installation finished reboot and Login To Desktop
 5 Run sudo nano /etc/lsb-release
   Then change DISTRIB_ID=Ubuntu To DISTRIB_ID=Syslack Linux
   Then change DISTRIB_RELEASE=6.06 To DISTRIB_RELEASE=1.0
@@ -22,3 +22,22 @@
    For Click on command button select click
    For Error message Select Siren
    For informational message select Boing
+
+For SPARC HP PA-RISC And IA-64
+
+1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Server install CD Then Download Which architecture (NOT 64-bit PC AMD64)
+2 Flash The ISO From USB Stick
+3 When on installer menu select Install to the hard disk
+4 Setup ubuntu server 6.06
+5 After installation finished reboot and Login
+6 Run sudo nano /etc/lsb-release
+  Then change DISTRIB_ID=Ubuntu To DISTRIB_ID=Syslack Linux
+  Then change DISTRIB_RELEASE=6.06 To DISTRIB_RELEASE=1.0
+  Remove DISTRUB_CODENAME=dapper
+  Then Change DISTIB_DESCRIPTION="Ubuntu 6.06.1 LTS" To DISTRIB_DESCRIPTION="Syslack Linux"
+7 Run sudo nano /boot/grub/menu.lst then change timeout 3 to 5 then add # on hiddenmenu example # hiddenmenu
+  on End Default Options Change title Ubuntu To Syslack Linux On Every Beginning Even recovery mode and memtest86+ then remove quiet splash
+  never update grub because you don’t actually need to run sudo update-grub since Syslack Linux For Legacy x86 32 bit,Mac (PowerPC) and IBM-PPC (POWER5),SPARC,HP PA-RISC,IA-64 uses grub legacy Which GRUB legacy reads menu.lst directly at boot, so changes take effect immediately.
+8 Run sudo nano /etc/issue then change Ubuntu 6.06.1 LTS \n \l To Syslack Linux \n \l
+  Then change sudo nano /etc/issue.net then change Ubuntu 6.06.1 LTS To Syslack Linux
+9 Run sudo rm /etc/motd then sudo reboot
