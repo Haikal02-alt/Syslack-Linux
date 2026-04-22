@@ -74,5 +74,3 @@ RISC-V=https://ubuntu.com/download/risc-v/canonical-built
 
   System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
   sudo apt-mark hold snapd
-
-15 Run sudo apt-mark hold ubuntu-wallpapers
