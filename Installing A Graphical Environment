@@ -50,6 +50,7 @@ cd Ubuntu-Hyprland
     If you’re using startx, you can create a .xinitrc with:
     exec Hyprland
 
+If you want to install unity you can install using sudo apt install ubuntu-unity-desktop
 
 If LightDM Cant Detect Your Desktop Environment I Would Recommend Lightdm gtk greeter this can be confirmed by running sudo apt install lightdm-gtk-greeter
 
