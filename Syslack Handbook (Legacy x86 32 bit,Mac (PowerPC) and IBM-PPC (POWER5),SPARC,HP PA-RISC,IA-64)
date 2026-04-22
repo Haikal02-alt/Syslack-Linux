@@ -41,6 +41,9 @@ deb-src http://old-releases.ubuntu.com/ubuntu dapper-backports main restricted u
 Update package lists
 sudo apt-get update
 
+14 Run sudo apt-get install gnome-backgrounds
+   Then select wallpaper you want example GNOME Curves
+
 For SPARC HP PA-RISC And IA-64
 
 1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Server install CD Then Download Which architecture (NOT 64-bit PC AMD64)
