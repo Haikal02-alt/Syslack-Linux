@@ -51,6 +51,8 @@ sudo apt-get update
    Then add warning.wav for Warning message
    Then reboot
 
+16 If you see Replace configuration file /etc/issue.net Click keep immediately
+
 For SPARC HP PA-RISC And IA-64
 
 1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Server install CD Then Download Which architecture (NOT 64-bit PC AMD64)
