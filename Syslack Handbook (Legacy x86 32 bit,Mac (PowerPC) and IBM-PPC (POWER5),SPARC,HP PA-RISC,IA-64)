@@ -53,6 +53,12 @@ sudo apt-get update
 
 16 If you see Replace configuration file /etc/issue.net Click keep immediately
 
+17 If you got on minimal you can run sudo nano ~/.bash_profile then add this
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    exec startx
+fi
+
 For SPARC HP PA-RISC And IA-64
 
 1 Download ISO http://old-releases.ubuntu.com/releases/6.06.0/ Then Select Server install CD Then Download Which architecture (NOT 64-bit PC AMD64)
