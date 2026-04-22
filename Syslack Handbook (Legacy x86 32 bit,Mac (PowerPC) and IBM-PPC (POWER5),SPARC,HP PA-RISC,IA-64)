@@ -17,3 +17,8 @@
 10 Run sudo nano /etc/gdm/gdm.conf then add # On GraphicalTheme=Human And remove # On GraphicalThemes=circles/:happygnome Example #GraphicalTheme=Human And GraphicalThemes=circles/:happygnome
    Ctrl x y enter
 11 Run sudo rm /etc/motd
+12 Go to Sound Preferences then
+   For Choose menu item select Beep
+   For Click on command button select click
+   For Error message Select Siren
+   For informational message select Boing
