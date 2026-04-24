@@ -4,9 +4,9 @@
 4 After installation finished reboot and Login To Desktop
 5 Run sudo nano /etc/lsb-release
   Then change DISTRIB_ID=Ubuntu To DISTRIB_ID=Syslack Linux
-  Then change DISTRIB_RELEASE=6.06 To DISTRIB_RELEASE=1.0
-  Remove DISTRUB_CODENAME=dapper
-  Then Change DISTIB_DESCRIPTION="Ubuntu 6.06.1 LTS" To DISTRIB_DESCRIPTION="Syslack Linux"
+  Then change DISTRIB_RELEASE=6.06 To DISTRIB_RELEASE=1.1
+  Then change DISTRIB_CODENAME=dapper to DISTRIB_CODENAME=viprin
+  Then Change DISTRIB_DESCRIPTION="Ubuntu 6.06.1 LTS" To DISTRIB_DESCRIPTION="Syslack Linux"
 6 Go To Theme Preferences Then Select Clearlooks Instead Of Human
 7 Open sessions then Disable Show splash screen on login then Enable Automatically save changes to session
 8 Run sudo nano /boot/grub/menu.lst then change timeout 3 to 5 then add # on hiddenmenu example # hiddenmenu
