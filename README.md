@@ -25,7 +25,9 @@ x86_64,ARM64,IBM POWER,s390x,RISC-V
 Syslack Linux For x86_64,ARM64,IBM POWER,s390x,RISC-V Have Very Minimal small base system 
 It contains system administration tools but no graphical environment which you need to install graphical environment manually using apt
 
+
 Legacy x86 32 bit,Mac (PowerPC) and IBM-PPC (POWER5),SPARC,HP PA-RISC,IA-64
 Syslack Linux For Legacy x86 32 bit,Mac (PowerPC) and IBM-PPC (POWER5),SPARC,HP PA-RISC,IA-64 Have graphical environment pre installed which is gnome 2.14.3 Since Syslack Linux For Legacy x86 32 bit,Mac (PowerPC) and IBM-PPC (POWER5),SPARC,HP PA-RISC,IA-64 is Ubuntu 6.06 Dapper Drake Based
+
 
 If You See theres 2 S Means Sysslack Some People thinks Its A Mistake But Its Not Mistake Because Sysslack means Sys Means System Base Then slack means slackware in ubuntu edition
